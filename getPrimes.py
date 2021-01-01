@@ -20,4 +20,4 @@ def getprimes(x):
 		if len(primes) == x:
 			return primes
 
-print(getprimes(1000000))
+print(getprimes(30))
