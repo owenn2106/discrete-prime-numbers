@@ -4,10 +4,6 @@ import time
 
 def primeFactors(n): 
     factorList = []  
-    # Print the number of two's that divide n 
-    while n % 2 == 0: 
-        factorList.append(2)
-        n = n // 2
           
     # n must be odd at this point 
     # so a skip of 2 ( i = i + 2) can be used 
@@ -33,7 +29,7 @@ if digit % 10 != 0:
     print("You need to input multiple of 10 e.g. 10, 20, 30, etc.")
 else:
     for _ in range(10):
-        randomNumber = rd.randint(10**(digit-1), 10**(digit)-1)
+        randomNumber = rd.randrange(10**(digit-1)+1, 10**(digit)-1, 2)
         numbers.append(randomNumber)
 
 for i in range(len(numbers)):

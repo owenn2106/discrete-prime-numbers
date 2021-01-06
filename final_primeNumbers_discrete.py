@@ -11,10 +11,6 @@ def primeFactors(num):
     else:
         factorList = []
 
-        while num % 2 == 0:
-            factorList.append(2)
-            num = num // 2
-
         for i in range(len(smallPrimeFactors)):
             while num % smallPrimeFactors[i] == 0:
                 factorList.append(smallPrimeFactors[i])
@@ -39,7 +35,7 @@ if digit % 10 != 0:
     print("You need to input multiple of 10 e.g. 10, 20, 30, etc.")
 else:
     for _ in range(10):
-        randomNumber = rd.randint(10**(digit-1), 10**(digit)-1)
+        randomNumber = rd.randrange(10**(digit-1)+1, 10**(digit)-1, 2)
         numbers.append(randomNumber)
 
 for i in range(len(numbers)):
