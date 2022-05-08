@@ -1,4 +1,4 @@
-# primeNumbers_discrete
+# Discrete Prime Number
 
 This is a program to find prime factors of a big numbers (10-digit, 20-digit or even 30-digit).
 
